@@ -1,0 +1,164 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+#app {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* 헤더 스타일 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 메인 콘텐츠 스타일 */
+main {
+    padding: 50px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* 지금 뜨는 콘텐츠 섹션 */
+.trending-now {
+    margin-bottom: 50px;
+}
+
+#trending-content {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.trending-item {
+    width: 200px;
+}
+
+.trending-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+.trending-item h3 {
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 카테고리 섹션 */
+.categories ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding: 0;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 50px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #757575;
+    text-decoration: none;
+}
+
+/* 쿠키 동의 배너 스타일 */
+#cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
